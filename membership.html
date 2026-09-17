@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Plans & Community Portal | Signers Excellence Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Advanced Floating Home Button -->
+  <a href="index.html" class="adv-home-btn" aria-label="Return to Homepage" role="button">
+    <div class="adv-home-icon-wrapper">
+      <svg class="adv-home-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span class="adv-pulse-ring"></span>
+    </div>
+    <span class="adv-home-label">Return Home</span>
+    <span class="adv-home-tooltip">Back to SEA Main Portal</span>
+  </a>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="logo-img">
+        <span class="brand-name">Signers Excellence Academy</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section with Slideshow Background -->
+  <section class="hero-banner">
+    <div class="hero-slideshow">
+      <div class="hero-slide slide-1" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1920&q=80');"></div>
+      <div class="hero-slide slide-2" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=80');"></div>
+      <div class="hero-slide slide-3" style="background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1920&q=80');"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <h1>Join the Signers Excellence Academy Network</h1>
+      <p>Become an official member to access exclusive learning resources, priority interpreter dispatch, skill center discounts, and community network events.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="main-container">
+
+    <!-- Billing Cycle Toggle -->
+    <section class="billing-toggle-wrapper">
+      <span class="toggle-label">Monthly Billing</span>
+      <label class="switch">
+        <input type="checkbox" id="billingToggle">
+        <span class="slider round"></span>
+      </label>
+      <span class="toggle-label">Annual Billing <span class="discount-tag">Save 15%</span></span>
+    </section>
+
+    <!-- Pricing Tiers Grid -->
+    <section class="section-block">
+      <div class="section-title text-center">
+        <h2>Membership Tiers</h2>
+        <p>Choose the tier that fits your personal, academic, or organizational goals.</p>
+      </div>
+
+      <div class="pricing-grid" id="pricingGrid">
+        
+        <!-- Student Tier -->
+        <article class="pricing-card">
+          <div class="plan-header">
+            <span class="plan-badge">Learners</span>
+            <h3 class="plan-title">Student & Learner</h3>
+            <div class="plan-price" data-monthly="K150" data-annual="K1,500">
+              <span class="amount">K150</span><span class="period">/month</span>
+            </div>
+            <p class="plan-subtitle">Ideal for students enrolled in language courses or vocational skill workshops.</p>
+          </div>
+          <ul class="plan-features">
+            <li>✔️ Access to basic ZSL dictionary app</li>
+            <li>✔️ 10% discount on language course tuition</li>
+            <li>✔️ Free admission to monthly student practice circles</li>
+            <li>✔️ Community forum access</li>
+            <li>❌ Priority interpreter dispatching</li>
+            <li>❌ Official directory profile listing</li>
+          </ul>
+          <button class="btn-secondary btn-block select-plan-btn" data-plan="Student Tier">Select Student Plan</button>
+        </article>
+
+        <!-- Professional Tier (Featured) -->
+        <article class="pricing-card featured-card">
+          <div class="featured-badge">Most Popular</div>
+          <div class="plan-header">
+            <span class="plan-badge">Interpreters & Pros</span>
+            <h3 class="plan-title">Professional</h3>
+            <div class="plan-price" data-monthly="K350" data-annual="K3,500">
+              <span class="amount">K350</span><span class="period">/month</span>
+            </div>
+            <p class="plan-subtitle">Tailored for practicing interpreters, language tutors, and field specialists.</p>
+          </div>
+          <ul class="plan-features">
+            <li>✔️ Full verified listing on Interpreter Dispatch Directory</li>
+            <li>✔️ Priority client booking dispatch requests</li>
+            <li>✔️ Free entry to continuing education webinars</li>
+            <li>✔️ 20% discount on advanced legal/medical masterclasses</li>
+            <li>✔️ Access to digital term glossaries (Lozi, Bemba, ZSL)</li>
+            <li>✔️ Official certificate badge for online profiles</li>
+          </ul>
+          <button class="btn-primary btn-block select-plan-btn" data-plan="Professional Tier">Select Professional Plan</button>
+        </article>
+
+        <!-- Enterprise / NGO Tier -->
+        <article class="pricing-card">
+          <div class="plan-header">
+            <span class="plan-badge">Organizations</span>
+            <h3 class="plan-title">Corporate & NGO</h3>
+            <div class="plan-price" data-monthly="K1,200" data-annual="K12,000">
+              <span class="amount">K1,200</span><span class="period">/month</span>
+            </div>
+            <p class="plan-subtitle">Designed for corporate institutions, NGOs, and government departments.</p>
+          </div>
+          <ul class="plan-features">
+            <li>✔️ Dedicated account manager & custom invoicing</li>
+            <li>✔️ Up to 10 staff seats for basic ZSL workplace training</li>
+            <li>✔️ On-demand emergency interpreter booking SLA</li>
+            <li>✔️ Corporate accessibility audit & consultancy</li>
+            <li>✔️ Co-branded workshop opportunities</li>
+            <li>✔️ Priority booking for large event interpreting</li>
+          </ul>
+          <button class="btn-secondary btn-block select-plan-btn" data-plan="Corporate & NGO Tier">Select Corporate Plan</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Member Benefits Highlights -->
+    <section class="section-block benefits-section">
+      <div class="section-title">
+        <h2>Why Join the Signers Excellence Academy Network?</h2>
+        <p>Your membership directly supports sign language literacy and community inclusion programs across Zambia.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">📚</div>
+          <h3>Digital Learning Vault</h3>
+          <p>Access hundreds of curated video lessons, sign language glossaries, and local language exercise sheets 24/7.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🚀</div>
+          <h3>Career & Job Dispatch</h3>
+          <p>Verified professional members get matched directly with incoming freelance interpretation opportunities nationwide.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🌐</div>
+          <h3>Nationwide Community</h3>
+          <p>Connect with over 1,000+ members, language advocates, deaf community leaders, and skill center mentors.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions Accordion -->
+    <section class="section-block faq-section">
+      <div class="section-title">
+        <h2>Membership FAQs</h2>
+        <p>Find answers to common questions regarding membership plans and billing.</p>
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Can I upgrade or downgrade my plan at any time?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Yes, you can upgrade or downgrade your membership plan whenever your needs change. Upgrades take effect immediately, while downgrades apply at the end of your current billing cycle.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>How does payment processing work in Zambia?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>We accept local payment methods including MTN Mobile Money, Airtel Money, Zamtel Kwacha, direct bank transfers, and Visa/Mastercard credit or debit cards.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Is student verification required for the Student Tier?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Yes, to qualify for the Student & Learner pricing, you will be prompted to submit proof of active enrollment (e.g., student ID or course registration number) during account setup.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>How do corporate/NGO bulk seats work?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Once your organization registers under the Corporate & NGO tier, your designated manager will receive an admin dashboard link to assign learning accounts to team members via email or phone numbers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Membership Confirmation Modal -->
+  <div id="membershipModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalPlanTitle">Confirm Membership Selection</h3>
+        <button id="closeMembershipModalBtn" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>You have selected the following plan:</p>
+        <div class="modal-info-box" id="membershipModalDetails">
+          <!-- Dynamically populated via JS -->
+        </div>
+        <p class="modal-note">Proceeding will redirect you to the account setup and payment gateway.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="cancelMembershipBtn" class="btn-secondary">Cancel</button>
+        <button id="confirmMembershipBtn" class="btn-primary">Proceed to Account Setup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="footer-logo">
+        <p>Empowering communities through professional language instruction, sign language literacy, interpreter dispatch, and technical skill development.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="language-school.html">Language School</a></li>
+          <li><a href="interpreter-services.html">Interpreter Services</a></li>
+          <li><a href="skills-centre.html">Skills Centre</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="class-registration.html">Class Registration</a></li>
+          <li><a href="skills-registration.html">Skills Registration</a></li>
+          <li><a href="interpreter-training.html">Interpreter Training</a></li>
+          <li><a href="booking.html">Direct Booking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Signers Excellence Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interpreter & Professional Training Programs | Signers Excellence Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="logo-img">
+        <span class="brand-name">Signers Excellence Academy</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <h1>Sign Language & Interpreter Training Academy</h1>
+      <p>Advance from foundational fluency to certified professional Sign Language Interpreting. Professional pathways tailored for community advocates, educational aides, and professional interpreters.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="main-container">
+
+    <!-- Training Overview Highlights -->
+    <section class="program-intro">
+      <div class="intro-grid">
+        <div class="intro-card">
+          <div class="intro-icon">🤟</div>
+          <h3>Zambian Sign Language (ZSL)</h3>
+          <p>Immersive, native-guided practical fluency covering deaf culture, spatial grammar, fingerspelling, and core vocabulary.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-icon">⚖️</div>
+          <h3>Ethics & Professional Code</h3>
+          <p>Rigorous training in neutrality, confidentiality, situational positioning, and professional ethics across legal, medical, and educational contexts.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-icon">📜</div>
+          <h3>Accredited Certification</h3>
+          <p>Earn accredited certifications that qualify you for commercial dispatch, conference interpreting, and institutional placement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Programs Section -->
+    <section class="section-block">
+      <div class="section-title">
+        <h2>Professional Training Pathways</h2>
+        <p>Filter by specialization to find the right certificate or diploma training track for your career goals.</p>
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div class="track-filters">
+        <button class="track-btn active" data-train-category="all">All Tracks</button>
+        <button class="track-btn" data-train-category="foundational">Foundational ZSL</button>
+        <button class="track-btn" data-train-category="professional">Professional Interpreting</button>
+        <button class="track-btn" data-train-category="specialized">Specialized Legal & Medical</button>
+      </div>
+
+      <!-- Training Course Grid -->
+      <div id="trainingGrid" class="cards-grid">
+        <!-- Javascript dynamically renders training program cards here -->
+      </div>
+    </section>
+
+    <!-- Course Modules Accordion -->
+    <section class="section-block curriculum-section">
+      <div class="section-title">
+        <h2>Core Curriculum Modules</h2>
+        <p>Click on any module to review detailed practical topics and competency benchmarks.</p>
+      </div>
+
+      <div class="accordion" id="trainingSyllabusAccordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Module 1: ZSL Linguistics, Structure & Deaf Culture</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Anatomical signing parameters (handshape, location, movement, orientation, non-manual markers), Deaf community history, social norms, and visual-gestural communication fundamentals.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Module 2: Simultaneous & Consecutive Interpretation Techniques</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Cognitive processing models for source-to-target language translation, message lag control, memory management, vocal delivery, and live signing accuracy under pressure.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Module 3: Educational & Community Interpreting</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Strategies for inclusive classroom environments, adapting complex academic terminology into clear visual concepts, team interpreting, and community event support.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Module 4: Professional Ethics, Legal & Medical Terminology</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Courtroom and healthcare interpreting protocols, maintaining strict professional boundaries, handling ethical dilemmas, specialized vocabulary, and client advocacy standards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Training Registration Modal -->
+  <div id="trainingModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="trainingModalTitle">Apply for Training Track</h3>
+        <button id="closeTrainingModalBtn" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="trainingModalDescription">You are initiating registration for the following training program:</p>
+        <div class="modal-info-box" id="trainingModalInfoBox">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="cancelTrainingBtn" class="btn-secondary">Cancel</button>
+        <button id="confirmTrainingBtn" class="btn-primary">Proceed to Application</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="footer-logo">
+        <p>Empowering communities through professional language instruction, sign language literacy, interpreter dispatch, and technical skill development.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="language-school.html">Language School</a></li>
+          <li><a href="interpreter-services.html">Interpreter Services</a></li>
+          <li><a href="skills-centre.html">Skills Centre</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="class-registration.html">Class Registration</a></li>
+          <li><a href="skills-registration.html">Skills Registration</a></li>
+          <li><a href="interpreter-training.html">Interpreter Training</a></li>
+          <li><a href="booking.html">Direct Booking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Signers Excellence Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

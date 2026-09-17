@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphic Design & Creative Skills | Signers Excellence Academy</title>
+  
+  <!-- Google Fonts: Inter & Poppins for modern hierarchy -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="logo-img">
+        <span class="brand-name">Signers Excellence <span class="accent-text">Academy</span></span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <!-- Professional Home Button -->
+        <a href="index.html" class="nav-link active btn-home">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </a>
+        <a href="#tracks" class="nav-link">Tracks</a>
+        <a href="#syllabus" class="nav-link">Syllabus</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section with Background Image Overlay -->
+  <section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <span class="badge"><i class="fa-solid fa-graduation-cap"></i> Professional Track</span>
+      <h1>Graphic Design & <br><span class="gradient-text">Visual Communication</span></h1>
+      <p>Build job-ready design skills in branding, flyer composition, logo creation, typography, and digital photo editing through inclusive instruction paired with Zambian Sign Language (ZSL) support.</p>
+      <div class="hero-actions">
+        <a href="#tracks" class="btn-primary-hero">Explore Curriculum</a>
+        <a href="#syllabus" class="btn-secondary-hero">View Syllabus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="main-container">
+
+    <!-- Program Highlights -->
+    <section class="program-intro">
+      <div class="intro-grid">
+        <div class="intro-card">
+          <div class="intro-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Practical Brand Projects</h3>
+          <p>Create real-world client deliverables including business logos, event posters, social media banners, and brand style guides.</p>
+        </div>
+        <div class="intro-card highlight-card">
+          <div class="intro-icon"><i class="fa-solid fa-hands-asl-interpreting"></i></div>
+          <h3>Deaf-Inclusive Instruction</h3>
+          <p>Lessons and practical feedback sessions are fully translated with real-time ZSL interpreting and captioning.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Commercial Portfolio</h3>
+          <p>Graduate with a published digital graphics portfolio ready to present to prospective employers or freelance clients.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Modules Section -->
+    <section class="section-block" id="tracks">
+      <div class="section-title">
+        <h2>Graphic Design Curriculum Tracks</h2>
+        <p>Choose a module specialization that fits your skill level and visual design ambitions.</p>
+      </div>
+
+      <!-- Level Filter Buttons -->
+      <div class="track-filters">
+        <button class="track-btn active" data-design-level="all">All Tracks</button>
+        <button class="track-btn" data-design-level="branding">Branding & Logo</button>
+        <button class="track-btn" data-design-level="editing">Image Editing</button>
+        <button class="track-btn" data-design-level="layout">Publication & Print</button>
+      </div>
+
+      <!-- Design Course Grid -->
+      <div id="designSkillsGrid" class="cards-grid">
+        <!-- Javascript dynamically renders design skill cards here -->
+      </div>
+    </section>
+
+    <!-- Syllabus Breakdown Accordion -->
+    <section class="section-block curriculum-section" id="syllabus">
+      <div class="section-title">
+        <h2>Detailed Syllabus & Key Competencies</h2>
+        <p>Explore the step-by-step topics covered across our graphic design and visual communications courses.</p>
+      </div>
+
+      <div class="accordion" id="designSyllabusAccordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fa-solid fa-swatchbook"></i> Module 1: Principles of Visual Design, Color Theory & Layout</span>
+            <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="accordion-content">
+            <p>Understanding color harmony, visual hierarchy, grid systems, spatial alignment, font selection, and effective composition for print and digital screens.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fa-solid fa-wand-magic-sparkles"></i> Module 2: Photo Editing, Background Removal & Compositing</span>
+            <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="accordion-content">
+            <p>Mastering image manipulation tools, background isolation (PNG exports), color correction, layer masking, retouching portraits, and creating promotional posters.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fa-solid fa-vector-square"></i> Module 3: Logo Design & Vector Brand Asset Creation</span>
+            <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="accordion-content">
+            <p>Designing scalable vector logos, custom typography marks, brand color palettes, icon sets, and business card layouts for commercial clients.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span><i class="fa-solid fa-bullhorn"></i> Module 4: Marketing Graphics & Social Media Packaging</span>
+            <span class="accordion-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="accordion-content">
+            <p>Building high-converting digital ad banners, social media carousels, event launch flyers, product packaging, and preparing print-ready PDF artwork files.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Design Course Registration Modal -->
+  <div id="designSkillModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="designModalTitle">Register for Design Course</h3>
+        <button id="closeDesignModalBtn" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="designModalDescription">You are applying for admission into the following design module:</p>
+        <div class="modal-info-box" id="designModalInfoBox">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="cancelDesignBtn" class="btn-secondary">Cancel</button>
+        <button id="confirmDesignBtn" class="btn-primary">Proceed to Registration</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="footer-logo">
+        <p>Empowering communities through professional language instruction, sign language literacy, interpreter dispatch, and technical skill development.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="language-school.html">Language School</a></li>
+          <li><a href="interpreter-services.html">Interpreter Services</a></li>
+          <li><a href="skills-centre.html">Skills Centre</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="class-registration.html">Class Registration</a></li>
+          <li><a href="skills-registration.html">Skills Registration</a></li>
+          <li><a href="interpreter-training.html">Interpreter Training</a></li>
+          <li><a href="booking.html">Direct Booking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Signers Excellence Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a certified Sign Language or Local Language Interpreter in Zambia with Signers Excellence Academy. Fast confirmation, on-site or remote options.">
+  <title>Book an Interpreter | Signers Excellence Academy</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Inline background image override for hero section -->
+  <style>
+    .page-header-interpreter {
+      background: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.82)), 
+                  url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1920&auto=format&fit=crop') no-repeat center center/cover;
+      color: #ffffff;
+      padding: 80px 0 60px 0;
+      position: relative;
+    }
+    .page-header-interpreter .badge {
+      background-color: #0284c7;
+      color: #ffffff;
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    .header-navigation-actions {
+      margin-top: 25px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-home {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-home:hover {
+      background-color: #ffffff;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span>📍 On-Site & Virtual Interpreter Services Across Zambia</span>
+      <div class="top-contact">
+        <a href="tel:+260978957535">📞 +260 978957535</a>
+        <a href="mailto:kakomakim@gmail.com">✉️ kakomakim@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Signers Excellence Academy Home">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" id="site-logo">
+      </a>
+
+      <!-- Mobile Navigation Toggle -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          
+          <li class="dropdown">
+            <a href="language-school.html">Language School ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="sign-language.html">Sign Language</a></li>
+              <li><a href="local-language.html">Local Languages</a></li>
+              <li><a href="bemba.html">Bemba</a></li>
+              <li><a href="lozi.html">Lozi</a></li>
+              <li><a href="luvale.html">Luvale</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="interpreter-services.html" class="active">Interpreters ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="interpreter.html">Our Interpreters</a></li>
+              <li><a href="booking.html" class="active">Book an Interpreter</a></li>
+              <li><a href="interpreter-training.html">Interpreter Training</a></li>
+              <li><a href="membership.html">Membership</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="skills-centre.html">Skills Centre ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="computer-skills.html">Computer Skills</a></li>
+              <li><a href="designing-skills.html">Designing Skills</a></li>
+              <li><a href="training.html">Short Courses</a></li>
+            </ul>
+          </li>
+
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="booking.html" class="btn btn-secondary">Book an Interpreter</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Header with Background Image & Home Button -->
+  <section class="page-header page-header-interpreter">
+    <div class="container">
+      <span class="badge">Fast Response Guarantee</span>
+      <h1>Interpreter Booking Portal</h1>
+      <p>Reserve certified Zambian Sign Language & Local Language interpreters for corporate, legal, healthcare, or conference engagements.</p>
+      
+      <!-- Home Navigation Button -->
+      <div class="header-navigation-actions">
+        <a href="index.html" class="btn-home">
+          <span>🏠</span> Back to Home
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Booking Content Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="booking-wrapper">
+        
+        <!-- Booking Form Card -->
+        <div class="booking-form-card">
+          <h2>Request an Interpreter</h2>
+          <p class="form-desc">Provide your assignment details below to receive coordinator confirmation and an official quote.</p>
+
+          <form id="interpreter-booking-form" class="custom-form" action="#" method="POST">
+            
+            <!-- Section 1: Assignment Details -->
+            <div class="form-section-title">1. Assignment Details</div>
+            
+            <div class="form-group">
+              <label for="service_type">Service Category *</label>
+              <select id="service_type" name="service_type" required class="form-control">
+                <option value="" disabled selected>-- Select Language / Service --</option>
+                <option value="sign-language">Zambian Sign Language (ZSL)</option>
+                <option value="bemba">Icibemba (Bemba)</option>
+                <option value="lozi">Silozi (Lozi)</option>
+                <option value="luvale">Chiluvale (Luvale)</option>
+                <option value="nyanja">Cinyanja / Nyanja</option>
+                <option value="tonga">Chitonga / Tonga</option>
+                <option value="multiple">Multi-Language / Conference Team</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="mode">Mode of Delivery *</label>
+                <select id="mode" name="mode" required class="form-control">
+                  <option value="onsite">On-Site (Physical Location)</option>
+                  <option value="virtual">Virtual / Remote (Zoom / Teams)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="setting">Setting Type *</label>
+                <select id="setting" name="setting" required class="form-control">
+                  <option value="corporate">Corporate / Business Workshop</option>
+                  <option value="conference">Conference / AGM</option>
+                  <option value="court">Legal Proceedings / Court Hearing</option>
+                  <option value="medical">Medical / Healthcare Consultation</option>
+                  <option value="community">Community Outreach / NGO Event</option>
+                  <option value="personal">Personal / Individual Support</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="event_date">Assignment Date *</label>
+                <input type="date" id="event_date" name="event_date" required class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="duration">Estimated Duration *</label>
+                <select id="duration" name="duration" required class="form-control">
+                  <option value="half-day">Half Day (Up to 4 Hours)</option>
+                  <option value="full-day">Full Day (Up to 8 Hours)</option>
+                  <option value="hourly">Hourly (Virtual Only - Min 2 hrs)</option>
+                  <option value="multi-day">Multi-Day Engagement</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" id="location-group">
+              <label for="location">Location / Venue (Town & Address) *</label>
+              <input type="text" id="location" name="location" placeholder="e.g. Mulungushi International Conference Centre, Lusaka" class="form-control" required>
+            </div>
+
+            <!-- Section 2: Contact Information -->
+            <div class="form-section-title mt-4">2. Contact & Billing Information</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="client_name">Full Name / Organization *</label>
+                <input type="text" id="client_name" name="client_name" placeholder="Full Name or Company Name" required class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+260 97X XXX XXX" required class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="name@domain.com" required class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special Instructions or Preparation Materials</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Mention preferred interpreter names, agenda notes, technical terminology context, or special requirements..." class="form-control"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-booking-btn">Submit Booking Request</button>
+          </form>
+
+          <!-- Form Response Message -->
+          <div id="booking-success-msg" class="alert alert-success mt-3" style="display: none;">
+            🎉 <strong>Booking Request Submitted!</strong> Our assignment coordinator will contact you via email or phone within 2 hours with availability and a formal quote.
+          </div>
+        </div>
+
+        <!-- Sidebar Summary -->
+        <aside class="booking-sidebar">
+          <div class="info-card">
+            <h3>Why Signers Excellence Academy?</h3>
+            <ul class="check-list">
+              <li><strong>Certified Professionals:</strong> Fully vetted interpreters for high-stakes court, corporate, and broadcast environments.</li>
+              <li><strong>Professional Ethics Code:</strong> Strict adherence to confidentiality, neutrality, and cultural sensitivity.</li>
+              <li><strong>Nationwide Reach:</strong> Field teams across Lusaka, Copperbelt, Western, and North-Western provinces.</li>
+              <li><strong>Emergency Dispatch:</strong> Rapid coverage for urgent medical and legal situations.</li>
+            </ul>
+          </div>
+
+          <div class="info-card mt-3 highlight-card">
+            <h4>Need Immediate Booking?</h4>
+            <p>For urgent assignments starting within 24 hours, contact our dispatch team directly:</p>
+            <p class="phone-num">📞 +260 978957535</p>
+            <p class="email-text">✉️ kakomakim@gmail.com</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="footer-logo">
+          <p>Signers Excellence Academy provides certified interpretation, native language education, and inclusive communication solutions across Zambia.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Interpreters</h4>
+          <ul class="footer-links">
+            <li><a href="interpreter.html">Our Interpreter Roster</a></li>
+            <li><a href="booking.html">Book an Interpreter</a></li>
+            <li><a href="interpreter-training.html">Professional Training</a></li>
+            <li><a href="membership.html">Join Membership</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Language Programs</h4>
+          <ul class="footer-links">
+            <li><a href="sign-language.html">Sign Language</a></li>
+            <li><a href="bemba.html">Icibemba</a></li>
+            <li><a href="lozi.html">Silozi</a></li>
+            <li><a href="luvale.html">Chiluvale</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Contact</h4>
+          <p>📍 Lusaka, Zambia</p>
+          <p>📞 +260 978957535</p>
+          <p>✉️ kakomakim@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Signers Excellence Academy. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

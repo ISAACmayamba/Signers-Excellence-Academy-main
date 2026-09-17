@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Signers Excellence Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="logo-img">
+        <span class="brand-name">Signers Excellence Academy</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <h1>Get in Touch</h1>
+      <p>Have questions about our language courses, interpreter dispatches, or practical technical training? Reach out to us directly or drop us a message below.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="main-container">
+
+    <section class="contact-wrapper">
+      <div class="contact-grid">
+        
+        <!-- Contact Information Sidebar -->
+        <div class="contact-info-card">
+          <h2>Contact Information</h2>
+          <p class="info-intro">Our administration team is available to assist you with course inquiries, interpreter bookings, and partnership opportunities.</p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div class="info-text">
+                <h4>Main Center</h4>
+                <p>Mongu & Lusaka Hubs, Zambia</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div class="info-text">
+                <h4>Phone / WhatsApp</h4>
+                <p>+260 978957535</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div class="info-text">
+                <h4>Email Address</h4>
+                <p>kakomakim@gmail.com</p>
+                <p>+260 978957535</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">⏰</div>
+              <div class="info-text">
+                <h4>Working Hours</h4>
+                <p>Mon - Fri: 08:00 - 17:00</p>
+                <p>Sat: 08:30 - 13:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <h4>Follow Our Updates</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">Facebook</a>
+              <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" class="social-link" aria-label="WhatsApp">WhatsApp Group</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card">
+          <div class="form-header">
+            <h2>Send Us a Message</h2>
+            <p>Fill out the form below and our team will respond within 24 hours.</p>
+          </div>
+
+          <!-- Alert Notification Box -->
+          <div id="contactAlert" class="alert-box" style="display: none;"></div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Full Name <span class="required">*</span></label>
+                <input type="text" id="contactName" name="contactName" class="form-control" placeholder="e.g. Enock Chola" required>
+                <span class="error-msg" id="contactNameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Email Address <span class="required">*</span></label>
+                <input type="email" id="contactEmail" name="contactEmail" class="form-control" placeholder="e.g. name@example.com" required>
+                <span class="error-msg" id="contactEmailError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactPhone">Phone / WhatsApp Number <span class="required">*</span></label>
+                <input type="tel" id="contactPhone" name="contactPhone" class="form-control" placeholder="e.g. +260 971 234 567" required>
+                <span class="error-msg" id="contactPhoneError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Inquiry Category <span class="required">*</span></label>
+                <select id="contactSubject" name="contactSubject" class="form-control" required>
+                  <option value="">-- Select Category --</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Language School">Language School / ZSL Classes</option>
+                  <option value="Interpreter Booking">Interpreter Services / Dispatch</option>
+                  <option value="Skills Centre">Skills Centre / Technical Courses</option>
+                  <option value="Membership & Sponsorship">Membership & Sponsorship</option>
+                </select>
+                <span class="error-msg" id="contactSubjectError"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Your Message <span class="required">*</span></label>
+              <textarea id="contactMessage" name="contactMessage" class="form-control textarea" rows="5" placeholder="How can we help you today?" required></textarea>
+              <span class="error-msg" id="contactMessageError"></span>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary btn-submit" id="submitContactBtn">
+                <span class="btn-text">Send Message</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/Sea logo 3.png" alt="SL-CLASSES Logo" class="footer-logo">
+        <p>Empowering communities through professional language instruction, sign language literacy, interpreter dispatch, and technical skill development.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="language-school.html">Language School</a></li>
+          <li><a href="interpreter-services.html">Interpreter Services</a></li>
+          <li><a href="skills-centre.html">Skills Centre</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="class-registration.html">Class Registration</a></li>
+          <li><a href="skills-registration.html">Skills Registration</a></li>
+          <li><a href="interpreter-training.html">Interpreter Training</a></li>
+          <li><a href="booking.html">Direct Booking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Signers Excellence Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

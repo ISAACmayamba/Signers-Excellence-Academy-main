@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started | Choose Your Pathway | Signers Excellence Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Animated Background Slideshow -->
+  <div class="slideshow-background">
+    <div class="bg-slide slide-1"></div>
+    <div class="bg-slide slide-2"></div>
+    <div class="bg-slide slide-3"></div>
+  </div>
+  <div class="bg-overlay"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/40?text=SEA'">
+        <span class="brand-name">Signers Excellence Academy</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <!-- Advanced Navbar Home Button -->
+        <a href="index.html" class="btn-home-advanced">
+          <span class="home-icon">🏠</span>
+          <span class="home-text">Home</span>
+        </a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Content Container -->
+  <div class="page-content-wrapper">
+
+    <!-- Hero Section -->
+    <section class="hero-banner">
+      <div class="hero-container">
+        <!-- Advanced Inline Home Button -->
+        <a href="index.html" class="btn-home-advanced home-inline">
+          <span class="home-icon">🏠</span>
+          <span class="home-text">Back to Home</span>
+        </a>
+
+        <h1>Welcome to Signers Excellence Academy</h1>
+        <p>Select your goal below to find the exact program, service, or portal tailored to your journey.</p>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-container">
+
+      <!-- Interactive Pathway Selector -->
+      <section class="section-block">
+        <div class="section-title">
+          <h2>How Can We Help You Today?</h2>
+          <p>Click on an option below or answer a quick quick-match question to find your path.</p>
+        </div>
+
+        <!-- Quick Option Cards -->
+        <div class="pathway-grid">
+          <div class="pathway-card" data-path="language">
+            <div class="pathway-icon">🌐</div>
+            <h3>Learn a Language</h3>
+            <p>Enroll in Zambian Sign Language (ZSL), English, or vocational language classes.</p>
+            <a href="class-registration.html" class="btn-secondary pathway-btn">Register for Class &rarr;</a>
+          </div>
+
+          <div class="pathway-card" data-path="interpreter">
+            <div class="pathway-icon">🤟</div>
+            <h3>Book an Interpreter</h3>
+            <p>Request professional ZSL interpreter dispatch for medical, legal, corporate, or community events.</p>
+            <a href="booking.html" class="btn-secondary pathway-btn">Book Interpreter &rarr;</a>
+          </div>
+
+          <div class="pathway-card" data-path="skills">
+            <div class="pathway-icon">💻</div>
+            <h3>Build Technical Skills</h3>
+            <p>Master practical computer software, graphic design, and vocational IT skills.</p>
+            <a href="skills-registration.html" class="btn-secondary pathway-btn">Skills Registration &rarr;</a>
+          </div>
+
+          <div class="pathway-card" data-path="training">
+            <div class="pathway-icon">🎓</div>
+            <h3>Become a Certified Interpreter</h3>
+            <p>Join our professional interpreter academy and earn accredited certification.</p>
+            <a href="interpreter-training.html" class="btn-secondary pathway-btn">Apply for Training &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Decision Wizard Tool -->
+      <section class="section-block wizard-section">
+        <div class="section-title">
+          <h2>Unsure Where to Start?</h2>
+          <p>Use our interactive guide tool to find the right pathway in 3 simple steps.</p>
+        </div>
+
+        <div class="wizard-container" id="guidedWizard">
+          <div class="wizard-step active" id="wizardStep1">
+            <h3>Step 1: What is your primary objective?</h3>
+            <div class="wizard-options">
+              <button class="btn-wizard-opt" data-target="learn">I want to learn skills or languages</button>
+              <button class="btn-wizard-opt" data-target="service">I need to hire or request a service</button>
+              <button class="btn-wizard-opt" data-target="career">I want to become a professional interpreter</button>
+            </div>
+          </div>
+
+          <div class="wizard-step" id="wizardStep2">
+            <h3 id="wizardStep2Title">Step 2: Choose your area of interest</h3>
+            <div class="wizard-options" id="wizardStep2Options">
+              <!-- Dynamically populated via JS -->
+            </div>
+          </div>
+
+          <div class="wizard-step" id="wizardStep3">
+            <h3>Step 3: Recommended Pathway</h3>
+            <div class="wizard-result" id="wizardResultBox">
+              <!-- Dynamically populated via JS -->
+            </div>
+            <button id="resetWizardBtn" class="btn-secondary mt-1">Start Over</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="footer-logo" onerror="this.src='https://via.placeholder.com/40?text=SEA'">
+          <p>Empowering communities through professional language instruction, sign language literacy, interpreter dispatch, and technical skill development.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="language-school.html">Language School</a></li>
+            <li><a href="interpreter-services.html">Interpreter Services</a></li>
+            <li><a href="skills-centre.html">Skills Centre</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Portals</h4>
+          <ul>
+            <li><a href="class-registration.html">Class Registration</a></li>
+            <li><a href="skills-registration.html">Skills Registration</a></li>
+            <li><a href="interpreter-training.html">Interpreter Training</a></li>
+            <li><a href="booking.html">Direct Booking</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Signers Excellence Academy. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

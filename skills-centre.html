@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocational & Skills Training Centre | Signers Excellence Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="logo-img">
+        <span class="brand-name">Signers Excellence Academy</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <h1>Vocational & Technical Skills Centre</h1>
+      <p>Empowering individuals and inclusive communities with practical, job-ready technical skills in digital literacy, web development, graphic design, and entrepreneurship.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="main-container">
+
+    <!-- Overview Stats / Pillars -->
+    <section class="skills-intro">
+      <div class="intro-grid">
+        <div class="intro-card">
+          <div class="intro-icon">💻</div>
+          <h3>Practical Tech Skills</h3>
+          <p>Hands-on project-based learning designed to prepare you directly for freelancing or workforce entry.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-icon">🤟</div>
+          <h3>Inclusive Environment</h3>
+          <p>All skill programs feature full Zambian Sign Language (ZSL) interpretation and accessible learning media.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-icon">📜</div>
+          <h3>Certificates & Portfolio</h3>
+          <p>Graduate with verified project portfolios and recognized certificates of completion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshop & Skills Course Listing -->
+    <section class="section-block">
+      <div class="section-title">
+        <h2>Available Vocational Programs</h2>
+        <p>Filter by category or search to find the right technical program for your career path.</p>
+      </div>
+
+      <!-- Search and Filter Controls -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <input type="text" id="skillSearchInput" placeholder="Search course by name, skill, or keyword...">
+        </div>
+        <div class="filter-group">
+          <select id="categoryFilter" class="filter-select">
+            <option value="">All Categories</option>
+            <option value="digital">Digital Literacy & Office</option>
+            <option value="web">Web Development & Code</option>
+            <option value="design">Graphics & Branding</option>
+            <option value="business">Entrepreneurship & Marketing</option>
+          </select>
+
+          <select id="modeFilter" class="filter-select">
+            <option value="">All Formats</option>
+            <option value="Physical">In-Person (Physical)</option>
+            <option value="Online">Online / Remote</option>
+            <option value="Hybrid">Hybrid</option>
+          </select>
+
+          <button id="resetSkillsFiltersBtn" class="btn-secondary">Reset</button>
+        </div>
+      </div>
+
+      <div class="counter-bar">
+        <span id="skillsCounter">Showing all programs</span>
+      </div>
+
+      <!-- Skills Cards Grid -->
+      <div id="skillsGrid" class="cards-grid">
+        <!-- Dynamically rendered via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Project Showcase / Student Impact Section -->
+    <section class="section-block showcase-section">
+      <div class="section-title">
+        <h2>Student Work & Impact</h2>
+        <p>Explore real projects developed by graduates of our vocational tech programs.</p>
+      </div>
+
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <div class="showcase-badge">Web Development</div>
+          <h3>Accessibility Resource Portal</h3>
+          <p>Built by web development cohorts to aggregate sign language dictionary resources and local community support listings.</p>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-badge">Graphic Design</div>
+          <h3>Brand Identity Packages</h3>
+          <p>Complete logo assets, promotional materials, and packaging designs created for local small enterprises in Zambia.</p>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-badge">Digital Literacy</div>
+          <h3>Community Business Accounting</h3>
+          <p>Practical spreadsheet tools and automated inventory management workflows built by enterprise class students.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Skills Enrollment Modal -->
+  <div id="skillsModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="skillsModalTitle">Register for Skills Program</h3>
+        <button id="closeSkillsModalBtn" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="skillsModalDescription">You are applying for admission into the following program:</p>
+        <div class="modal-info-box" id="skillsModalInfoBox">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="cancelSkillsBtn" class="btn-secondary">Cancel</button>
+        <button id="confirmSkillsBtn" class="btn-primary">Proceed to Skills Registration</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="footer-logo">
+        <p>Empowering communities through professional language instruction, sign language literacy, interpreter dispatch, and technical skill development.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="language-school.html">Language School</a></li>
+          <li><a href="interpreter-services.html">Interpreter Services</a></li>
+          <li><a href="skills-centre.html">Skills Centre</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="class-registration.html">Class Registration</a></li>
+          <li><a href="skills-registration.html">Skills Registration</a></li>
+          <li><a href="interpreter-training.html">Interpreter Training</a></li>
+          <li><a href="booking.html">Direct Booking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Signers Excellence Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

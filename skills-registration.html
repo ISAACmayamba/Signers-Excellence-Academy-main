@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Registration | Skills Centre | Signers Excellence Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="logo-img">
+        <span class="brand-name">Signers Excellence Academy</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <h1>Technical Skills Registration</h1>
+      <p>Enroll in hands-on courses including Graphic Design, Computer Productivity, Web Development, and Digital Vocational Skills. Complete the application below to reserve your space.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="main-container">
+
+    <section class="registration-wrapper">
+      <div class="form-card">
+        <div class="form-header">
+          <h2>Skills Center Enrollment Form</h2>
+          <p>Fill out the required information below to enroll in your practical technical module. Fields marked with an asterisk (<span class="required">*</span>) are mandatory.</p>
+        </div>
+
+        <!-- Notification Alert Box -->
+        <div id="skillsRegAlert" class="alert-box" style="display: none;"></div>
+
+        <form id="skillsRegistrationForm" class="registration-form" novalidate>
+          
+          <!-- Section 1: Applicant Details -->
+          <div class="form-section">
+            <h3 class="form-section-title">1. Applicant Details</h3>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Enock Chola" required>
+                <span class="error-msg" id="fullNameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="e.g. applicant@example.com" required>
+                <span class="error-msg" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. +260 971 234 567" required>
+                <span class="error-msg" id="phoneError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="location">City / District <span class="required">*</span></label>
+                <input type="text" id="location" name="location" class="form-control" placeholder="e.g. Mongu, Lusaka, Ndola" required>
+                <span class="error-msg" id="locationError"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Skill Track & Experience -->
+          <div class="form-section">
+            <h3 class="form-section-title">2. Skill Track & Technical Background</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="skillTrack">Select Practical Module <span class="required">*</span></label>
+                <select id="skillTrack" name="skillTrack" class="form-control" required>
+                  <option value="">-- Choose Technical Module --</option>
+                  <option value="GRAPH-101">Graphic Design & Media Assets (Canva, Photoshop, Branding)</option>
+                  <option value="COMP-101">Computer Literacy & MS Office Suite</option>
+                  <option value="WEB-101">Front-End Web Development (HTML, CSS, JS)</option>
+                  <option value="DIGI-101">Digital Marketing & Social Media Management</option>
+                </select>
+                <span class="error-msg" id="skillTrackError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="experienceLevel">Current Proficiency Level <span class="required">*</span></label>
+                <select id="experienceLevel" name="experienceLevel" class="form-control" required>
+                  <option value="">-- Select Level --</option>
+                  <option value="absolute_beginner">Absolute Beginner (No prior experience)</option>
+                  <option value="basic">Basic Knowledge (Self-taught / basic awareness)</option>
+                  <option value="intermediate">Intermediate (Looking to professionalize skills)</option>
+                </select>
+                <span class="error-msg" id="experienceLevelError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="hasLaptop">Do you have access to a laptop/computer for practical work? <span class="required">*</span></label>
+                <select id="hasLaptop" name="hasLaptop" class="form-control" required>
+                  <option value="">-- Select Option --</option>
+                  <option value="yes_personal">Yes, I have a personal laptop</option>
+                  <option value="no_need_lab">No, I will need access to the Skills Centre Lab</option>
+                </select>
+                <span class="error-msg" id="hasLaptopError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredCohort">Preferred Cohort Session <span class="required">*</span></label>
+                <select id="preferredCohort" name="preferredCohort" class="form-control" required>
+                  <option value="">-- Select Session --</option>
+                  <option value="morning_lab">Morning Practical Batch (09:00 - 12:00)</option>
+                  <option value="afternoon_lab">Afternoon Practical Batch (14:00 - 17:00)</option>
+                  <option value="weekend_intensive">Weekend Intensive Batch (Saturdays, 08:30 - 14:00)</option>
+                </select>
+                <span class="error-msg" id="preferredCohortError"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Goals & Declaration -->
+          <div class="form-section">
+            <h3 class="form-section-title">3. Learning Goals & Terms</h3>
+
+            <div class="form-group">
+              <label for="projectGoal">Primary Goal / Target Project</label>
+              <textarea id="projectGoal" name="projectGoal" class="form-control textarea" rows="3" placeholder="Briefly describe what you hope to build or achieve (e.g. designing flyers/logos, building websites, office productivity)..."></textarea>
+            </div>
+
+            <div class="form-checkbox-group">
+              <input type="checkbox" id="skillsTermsCheck" name="skillsTermsCheck" required>
+              <label for="skillsTermsCheck">I agree to attend scheduled practical sessions and abide by the <a href="#" class="terms-link">Skills Centre Code of Conduct</a>. <span class="required">*</span></label>
+            </div>
+            <span class="error-msg" id="skillsTermsCheckError"></span>
+          </div>
+
+          <!-- Form Action Button -->
+          <div class="form-actions">
+            <button type="submit" class="btn-primary btn-submit" id="submitSkillsRegBtn">
+              <span class="btn-text">Submit Skills Registration</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="footer-logo">
+        <p>Empowering communities through professional language instruction, sign language literacy, interpreter dispatch, and technical skill development.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="language-school.html">Language School</a></li>
+          <li><a href="interpreter-services.html">Interpreter Services</a></li>
+          <li><a href="skills-centre.html">Skills Centre</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="class-registration.html">Class Registration</a></li>
+          <li><a href="skills-registration.html">Skills Registration</a></li>
+          <li><a href="interpreter-training.html">Interpreter Training</a></li>
+          <li><a href="booking.html">Direct Booking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Signers Excellence Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

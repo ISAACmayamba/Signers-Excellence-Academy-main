@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interpreter Training Program | Signers Excellence Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="logo-img">
+        <span class="brand-name">Signers Excellence Academy</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <h1>Professional Interpreter Training Program</h1>
+      <p>Become a certified professional interpreter in Zambian Sign Language (ZSL) or indigenous Zambian languages through our comprehensive, practical training curriculum.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+    
+    <!-- Program Overview & Highlights -->
+    <section class="program-intro">
+      <div class="intro-grid">
+        <div class="intro-card">
+          <div class="intro-icon">📜</div>
+          <h3>Professional Certification</h3>
+          <p>Earn an accredited certification recognized across legal, medical, corporate, and educational institutions in Zambia.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-icon">🤝</div>
+          <h3>Hands-on Field Practicum</h3>
+          <p>Gain real-world interpretation experience under the direct guidance of senior certified interpreters.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-icon">💼</div>
+          <h3>Directory & Job Dispatch</h3>
+          <p>Top graduates automatically qualify for enrollment on the SL-CLASSES public interpreter dispatch directory.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Track Selection -->
+    <section class="section-block">
+      <div class="section-title">
+        <h2>Available Training Tracks</h2>
+        <p>Select a specialization track to view course breakdown, duration, and admission criteria.</p>
+      </div>
+
+      <div class="track-filters">
+        <button class="track-btn active" data-track="all">All Tracks</button>
+        <button class="track-btn" data-track="zsl">Sign Language Track</button>
+        <button class="track-btn" data-track="local">Local Languages Track</button>
+        <button class="track-btn" data-track="advanced">Specialized & Legal Track</button>
+      </div>
+
+      <!-- Training Course Cards Grid -->
+      <div id="trainingCoursesGrid" class="cards-grid">
+        <!-- Javascript dynamically renders courses here -->
+      </div>
+    </section>
+
+    <!-- Curriculum Syllabus Accordion -->
+    <section class="section-block curriculum-section">
+      <div class="section-title">
+        <h2>Core Curriculum Modules</h2>
+        <p>Explore the foundational modules covered across all certification tracks.</p>
+      </div>
+
+      <div class="accordion" id="curriculumAccordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Module 1: Code of Ethics & Professional Conduct</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Covers impartiality, confidentiality, role boundaries, professional accuracy, and navigating ethical dilemmas in medical, legal, and community settings.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Module 2: Consecutive vs. Simultaneous Interpreting Modes</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Mastering active listening techniques, memory retention techniques, note-taking frameworks, and real-time audio/visual rendering.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Module 3: Specialized Terminology Glossaries</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>In-depth coverage of specialized Zambian legal, medical, anatomical, financial, and civic vocabulary in ZSL, Bemba, Lozi, Luvale, and Nyanja.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Module 4: Practical Mock Sessions & Assessment</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Live simulated court sessions, doctor-patient interactions, and conference scenarios evaluated by master interpreters before final field deployment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Enrollment Modal -->
+  <div id="enrollmentModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="enrollModalTitle">Enroll in Program</h3>
+        <button id="closeEnrollModalBtn" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="enrollModalDescription">Confirm your selection to proceed to the registration portal.</p>
+        <div class="modal-info-box" id="enrollModalInfoBox"></div>
+      </div>
+      <div class="modal-footer">
+        <button id="cancelEnrollBtn" class="btn-secondary">Cancel</button>
+        <button id="confirmEnrollBtn" class="btn-primary">Proceed to Registration</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="footer-logo">
+        <p>Empowering communities through professional language instruction, sign language literacy, interpreter dispatch, and technical skill development.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="language-school.html">Language School</a></li>
+          <li><a href="interpreter-services.html">Interpreter Services</a></li>
+          <li><a href="skills-centre.html">Skills Centre</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="class-registration.html">Class Registration</a></li>
+          <li><a href="skills-registration.html">Skills Registration</a></li>
+          <li><a href="interpreter-training.html">Interpreter Training</a></li>
+          <li><a href="booking.html">Direct Booking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Signers Excellence Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

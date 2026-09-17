@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interpreter Directory | Signers Excellence Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Professional Home Button -->
+  <a href="index.html" class="floating-home-btn" aria-label="Return to Homepage" title="Return to Homepage">
+    <div class="home-btn-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+    </div>
+    <span class="home-btn-text">Home</span>
+  </a>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="logo-img">
+        <span class="brand-name">Signers Excellence Academy</span>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+      </nav>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section with Slideshow Background Images -->
+  <section class="hero-banner">
+    <div class="slideshow-background">
+      <!-- Slide 1: Sign Language / Communication -->
+      <div class="slide slide-1" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1600&q=80');"></div>
+      <!-- Slide 2: Professional Conference / Interpretation -->
+      <div class="slide slide-2" style="background-image: url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1600&q=80');"></div>
+      <!-- Slide 3: Corporate / Community Meeting -->
+      <div class="slide slide-3" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80');"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <h1>Find Certified Interpreters</h1>
+      <p>Connect with expert local language and sign language interpreters across Zambia for legal, medical, corporate, and educational needs.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+    
+    <!-- Directory Filter Section -->
+    <section class="filter-card">
+      <div class="search-box">
+        <input 
+          type="text" 
+          id="searchInput" 
+          class="form-input" 
+          placeholder="Search by interpreter name, language (e.g., Lozi, Sign Language), or location..."
+        >
+      </div>
+
+      <div class="filters-grid">
+        <div class="filter-group">
+          <label for="languageFilter">Language</label>
+          <select id="languageFilter" class="form-select">
+            <option value="">All Languages</option>
+            <option value="Zambian Sign Language">Zambian Sign Language (ZSL)</option>
+            <option value="Lozi">Lozi</option>
+            <option value="Bemba">Bemba</option>
+            <option value="Luvale">Luvale</option>
+            <option value="Nyanja">Nyanja</option>
+            <option value="Tonga">Tonga</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="specialtyFilter">Specialty / Field</label>
+          <select id="specialtyFilter" class="form-select">
+            <option value="">All Specialties</option>
+            <option value="Medical">Medical Interpretation</option>
+            <option value="Legal">Legal & Court</option>
+            <option value="Conference">Conference & Events</option>
+            <option value="Educational">Educational & Classroom</option>
+            <option value="Community">Community & General</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="statusFilter">Availability Status</label>
+          <select id="statusFilter" class="form-select">
+            <option value="">All Availability</option>
+            <option value="available">Available Now</option>
+            <option value="on-call">On Call</option>
+            <option value="booked">Fully Booked</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-actions">
+        <span id="resultsCounter" class="results-counter">Loading directory...</span>
+        <button id="resetFiltersBtn" class="btn-text">Reset Filters</button>
+      </div>
+    </section>
+
+    <!-- Interpreter Cards Grid -->
+    <section id="interpretersGrid" class="cards-grid">
+      <!-- Dynamic Javascript Content Injected Here -->
+    </section>
+
+  </main>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalTitle">Request Interpreter</h3>
+        <button id="closeModalBtn" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="modalDescription">Confirm your selection to proceed to the booking details page.</p>
+        <div class="modal-info-box" id="modalInfoBox"></div>
+      </div>
+      <div class="modal-footer">
+        <button id="cancelModalBtn" class="btn-secondary">Cancel</button>
+        <button id="confirmBookingBtn" class="btn-primary">Proceed to Booking</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/Sea logo 3.png" alt="Signers Excellence Academy Logo" class="footer-logo">
+        <p>Empowering communities through professional language instruction, sign language literacy, interpreter dispatch, and technical skill development.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="language-school.html">Language School</a></li>
+          <li><a href="interpreter-services.html">Interpreter Services</a></li>
+          <li><a href="skills-centre.html">Skills Centre</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="class-registration.html">Class Registration</a></li>
+          <li><a href="skills-registration.html">Skills Registration</a></li>
+          <li><a href="interpreter-training.html">Interpreter Training</a></li>
+          <li><a href="booking.html">Direct Booking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Signers Excellence Academy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
